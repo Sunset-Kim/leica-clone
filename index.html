@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- slick slide -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/slick/slick.js"></script>
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
+    <!-- custom js -->
+    <script src="./js/slide.js" defer></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <!-- <i class="fa fa-arrow-right" aria-hidden="true"></i> -->
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="wrap">
+            <div class="header-left">
+                <a href="#none">REGISTER A PRODUCT</a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <label for="input-search">
+                            <input id="input-search" type="text" placeholder="Search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <select name="lang" id="lang-list">
+                            <option value="lang-kr">Korea</option>
+                            <option value="lang-jp">Japan</option>
+                            <option value="lang-us">English</option>
+                        </select>
+                    </li>
+                    <li><a href="#none">Login</a></li>
+                    <li><a href="#none">
+                        <button class="btn-link">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            OnlineStore
+                        </button>
+                        
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- gnb -->
+    <nav id="gnb">
+        <div class="wrap">
+            <!-- logo -->
+            <h1 class="visually-hidden">
+                Leica
+            </h1>
+            <a href="#" class="logo-box">
+                <img src="./img/logo48.png" alt="로고">
+            </a>
+            <ul class="gnb-depth1">
+                <li>
+                    <a href="#none">LEICA CAMERA KOREA</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">회사소개</a></li>
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">자주하는 질문</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">AKADEMIE</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">라이카아카데미</a></li>
+                            <li><a href="#none">아카데미 일정</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">CONTENTS</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">보도자료</a></li>
+                            <li><a href="#none">전시</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">STORE/SERVICE CENTER</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">위치안내</a></li>                            
+                        </div>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">CUSTOMER CARE</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">제품등록</a></li>
+                            <li><a href="#none">다운로드</a></li>
+                            <li><a href="#none">자료실</a></li>
+                            <li><a href="#none">온라인 상담예약</a></li>
+                            <li><a href="#none">오프라인 상담예약</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <a class="btn-cart" href="#none">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- mainbanner -->
+    <section id="main-banner">
+        <div class="banner-container">
+            <div class="banner-slide" data-dot-title="LEICA D-LUX 7 STREET KIT.<br>자연스러운 거리 사진 촬영을 위한 완벽한 선택">
+                <a href="#none" class="link-only">
+                    <img src="img/Top_main_web_2.jpg" alt="배너이미지">
+                    <div class="banner-text wrap">
+                        <p>
+                            LEICA D-LUX 7 STREET KIT.<br>자연스러운 거리 사진 촬영을 위한 완벽한 선택
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="banner-slide" data-dot-title="APO-Summicron-M 35 f/2 ASPH.<br/>ASPH">
+                <a href="#none" class="link-only">
+                    <img src="img/Top_main_web_3.jpg" alt="배너이미지">
+                    <div class="banner-text wrap">
+                        <p>
+                            APO-Summicron-M 35 f/2 ASPH.<br />역사를 만드는 사진을 위하여
+                        </p>
+                    </div>
+                </a>                
+            </div>
+            <div class="banner-slide" data-dot-title="ELEGANCE IN BLACK AND GOLD<br />Q2 Daniel Craig X Greg Williams">
+                <a href="#none" class="link-only">
+                    <img src="img/Top_main_web_4.jpg" alt="배너이미지">
+                    <div class="banner-text wrap">
+                        <p>
+                            ELEGANCE IN BLACK AND GOLD<br />Q2 Daniel Craig X Greg Williams
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="banner-slide" data-dot-title="Noctilux-M 50 f/1.2<br />A Legend Reborn">
+                <a href="#none" class="link-only">
+                    <img src="img/Top_main_web_5.jpg" alt="배너이미지">
+                    <div class="banner-text wrap">
+                        <p>
+                            Noctilux-M 50 f/1.2<br>A Legend Reborn
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="banner-slide" data-dot-title="LEICA | ZEGNA Capsule Collection<br />Fashion meets Photography">
+                <a href="#none" class="link-only">
+                    <img src="img/Top_main_web_3.jpg" alt="배너이미지">
+                    <div class="banner-text wrap">
+                        <p>
+                            LEICA | ZEGNA Capsule Collection<br>Fashion meets Photography
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- main content -->
+    <section id="main-content">
+        <div class="wrap">
+            <div class="gallery">
+                <div class="feature wide">
+                    <a  class="ef-overlay" href="#none">
+                        <img src="./img/gallery_1.jpg" alt="와이드갤러리 이미지">
+                        <div class="feature-text">
+                            <p class="feature-text-category">Leica S System</p>
+                            <p class="feature-text-desc">
+                                그 자체로 독보적인 클라스,<br>
+                                64 Megapixel,<br>
+                                라이카 S3 출시,<br>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="feature left">
+                    <a  class="ef-overlay" href="#none">
+                        <img src="./img/gallery_2.jpg" alt="와이드갤러리 이미지">
+                        <div class="feature-text">
+                            <p class="feature-text-category">Leica Q2 Monochrom</p>
+                            <p class="feature-text-desc">
+                                전용 모노크롬 센서를 갖춘
+                                <br>
+                                유일한 풀 프레임 컴팩트 카메라,
+                                <br>
+                                Leica Q2 Monochrom
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="right">
+                    <div class="feature">
+                        <a  class="ef-overlay" href="#none">
+                            <img src="./img/gallery_3.jpg" alt="와이드갤러리 이미지">
+                            <div class="feature-text">
+                                <p class="feature-text-category">
+                                    LEICA M10-R
+                                </p>
+                                <p class="feature-text-desc">
+                                    SPECIAL PACKAGE
+                                    <br>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a class="ef-overlay"  href="#none">
+                            <img src="./img/gallery_4.jpg" alt="와이드갤러리 이미지">
+                            <div class="feature-text">
+                                <p class="feature-text-category">
+                                    다큐멘터리 작가 
+                                    <br>
+                                    김동우 전시
+                                </p>
+                                <p class="feature-text-desc">
+                                    Land of Glory
+                                    <br>
+                                    뭉우리돌을 찾아서
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- slide -->
+    <section id="slide">
+        <div class="slide-container">
+            <div class="slide-item">
+                <a class="ef-overlay" href="#none">
+                    <img src="./img/subbanner1.jpg" alt="">
+                    <div class="slide-text">
+                        <p class="slide-text-category">Leica S System</p>
+                        <p class="slide-text-desc">
+                            그 자체로 독보적인 클라스,<br>
+                            64 Megapixel,<br>
+                            라이카 S3 출시,<br>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-item">
+                <a class="ef-overlay" href="#none">
+                    <img src="./img/subbanner2.jpg" alt="">
+                    <div class="slide-text">
+                        <p class="slide-text-category">Leica S System</p>
+                        <p class="slide-text-desc">
+                            그 자체로 독보적인 클라스,<br>
+                            64 Megapixel,<br>
+                            라이카 S3 출시,<br>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-item">
+                <a class="ef-overlay" href="#none">
+                    <img src="./img/subbanner3.jpg" alt="">
+                    <div class="slide-text">
+                        <p class="slide-text-category">Leica S System</p>
+                        <p class="slide-text-desc">
+                            그 자체로 독보적인 클라스,<br>
+                            64 Megapixel,<br>
+                            라이카 S3 출시,<br>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide-item">
+                <a class="ef-overlay" href="#none">
+                    <img src="./img/subbanner4.jpg" alt="">
+                    <div class="slide-text">
+                        <p class="slide-text-category">Leica S System</p>
+                        <p class="slide-text-desc">
+                            그 자체로 독보적인 클라스,<br>
+                            64 Megapixel,<br>
+                            라이카 S3 출시,<br>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- article -->
+    <section id="article">
+        <div class="wrap">
+            <div class="article-title">
+                <h2>Akademie Schdules</h2>
+                <a href="#none">About</a>
+            </div>
+            <div class="article-content">
+                <div class="article-left">
+                    <a href="#none" class="ef-overlay">
+                        <img src="./img/akademie_left.jpg" alt="라이카로 가족사진 찍기">
+                        <div class="article-text">
+                            <div class="article-text-desc">
+                                <span class="date">2021.05.01</span>
+                                <hr>
+                                <span>작가의 작업실</span>
+                            </div>
+                            <h4 class="article-text-title">
+                               라이카로 가족사진 찍기
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="article-right">
+                    <ul class="article-list">
+                        <li class="article-list-item">
+                            <p class="article-list-date">
+                                May<br>
+                                15
+                            </p>
+                            <a class="article-list-content ef-innerborder" href="#none">
+                                <div class="article-list-text">
+                                    <h4 class="article-list-title">흑백사진에 대하여2. 촬영과 아날로그 현상</h4>
+                                    <div class="article-list-subtitle">
+                                        <p>2021. 05. 15</p>
+                                        <p>작가의 작업실</p>
+                                    </div>
+                                </div>
+                                <div class="article-list-img">
+                                    <img src="img/article1.jpg" alt="아카데미 메인사진">
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="article-list-item">
+                            <p class="article-list-date">
+                                May<br>
+                                15
+                            </p>
+                            <a class="article-list-content ef-innerborder" href="#none">
+                                <div class="article-list-text">
+                                    <h4 class="article-list-title">아날로그 필름 수업</h4>
+                                    <div class="article-list-subtitle">
+                                        <p>2021. 05. 15</p>
+                                        <p>작가의 작업실</p>
+                                    </div>
+                                </div>
+                                <div class="article-list-img">
+                                    <img src="img/article2.jpg" alt="아카데미 사진1">
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="article-list-item">
+                            <p class="article-list-date">
+                                Aug<br>
+                                17
+                            </p>
+                            <a class="article-list-content ef-innerborder" href="#none">
+                                <div class="article-list-text">
+                                    <h4 class="article-list-title">라이카 SL 기초수업</h4>
+                                    <div class="article-list-subtitle">
+                                        <p>2021. 05. 15</p>
+                                        <p>작가의 작업실</p>
+                                    </div>
+                                </div>
+                                <div class="article-list-img">
+                                    <img src="img/article3.jpg" alt="아카데미 사진2">
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="article-list-item">
+                            <p class="article-list-date">
+                                May<br>
+                                15
+                            </p>
+                            <a class="article-list-content ef-innerborder" href="#none">
+                                <div class="article-list-text">
+                                    <h4 class="article-list-title">라이카 살롱시즌.1<br>(3개월 신청)</h4>
+                                    <div class="article-list-subtitle">
+                                        <p>2021. 05. 15</p>
+                                        <p>작가의 작업실</p>
+                                    </div>
+                                </div>
+                                <div class="article-list-img">
+                                    <img src="img/article6.jpg" alt="아카데미 사진3">
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="article-list-item">
+                            <p class="article-list-date">
+                                May<br>
+                                15
+                            </p>
+                            <a class="article-list-content ef-innerborder" href="#none">
+                                <div class="article-list-text">
+                                    <h4 class="article-list-title">라이카 살롱시즌.1<br>(8월 신청)</h4>
+                                    <div class="article-list-subtitle">
+                                        <p>2021. 05. 15</p>
+                                        <p>작가의 작업실</p>
+                                    </div>
+                                </div>
+                                <div class="article-list-img">
+                                    <img src="img/article5.jpg" alt="아카데미 사진4">
+                                </div>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subbanner -->
+    <section id="subbaner">
+        <div class="wrap">
+            <h2 class="subbaner-title">LEICA EXHIBITION</h2>
+            <div class="subbanner-content">
+                <a href="#none" class="ef-overlay" aria-hidden>
+                    <img src="img/subbanner.jpg" alt="서브배너이미지">
+                    <div class="subbanner-text">
+                        <h4 class="subbanner-text-title">우리가 모르는 도시 Unknown City</h4>
+                        <hr>
+                        <p class="subbanner-text-desc">
+                            2021.04.15 ~ 2021.05.12
+                            <span>라이카 스토어 신세계 본점</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- alert -->
+    <section id="notice">
+        <div class="wrap">
+            <a href="#none" aria-hidden class="link-only">
+                <h2 class="notice-title">제품등록</h2>
+                <span class="notice-desc">라이카 회원 가입과 제품등록을 통해 여러 혜택을 만나보세요.</span>
+            </a>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">        
+        <nav class="footer-nav">
+            <div class="wrap">
+                <!-- 1st -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">LEICA CAMERA KOREA</li>
+                        <li><a href="#none">회사소개</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-nav-title">LEGAL</li>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <!-- 2nd -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">ONLINE SHOP</li>
+                        <li><a href="#none">Leica S</a></li>
+                        <li><a href="#none">Leica M </a></li>
+                        <li><a href="#none">Leica SL2</a></li>
+                        <li><a href="#none">Leica Q</a></li>
+                        <li><a href="#none">Leica TL2</a></li>
+                        <li><a href="#none">Compacts</a></li>
+                        <li><a href="#none">S/O</a></li>
+                        <li><a href="#none">Special</a></li>
+                    </ul>
+                </div>
+                <!-- 3rd -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">AKADEMIE</li>
+                        <li><a href="#none">라이카 아카데미 소개</a></li>
+                        <li><a href="#none">아카데미 일정 </a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-nav-title">CUSTOMER SERVICE</li>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">자주하는 질문(FAQ)</a></li>
+                        <li><a href="#none">배송 및 교환 정책</a></li>
+                        <li><a href="#none">1:1문의</a></li>
+                        <li><a href="#none">매장안내</a></li>
+                    </ul>
+                </div>
+                <!-- 4th -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">CONTENTS</li>
+                        <li><a href="#none">보도자료</a></li>
+                        <li><a href="#none">라이카 전시 일정</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-nav-title">CUSTOMER CARE</li>
+                        <li><a href="#none">제품등록</a></li>
+                        <li><a href="#none">다운로드</a></li>
+                        <li><a href="#none">자료실</a></li>
+                    </ul>
+                </div>
+                <!-- 5th -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">LOGIN / SIGN UP</li>
+                        <li><a href="#none">Login Account</a></li>
+                        <li><a href="#none">Sign Up</a></li>
+                    </ul>
+                </div>
+                <!-- 6th -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">SOCIAL</li>
+                        <li><a href="#none">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            Facebook
+                        </a></li>
+                        <li><a href="#none">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            Instagram
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <!-- footer info -->
+        <div class="footer-info">
+            <div class="wrap">
+                <ul>
+                    <li><span>라이카 카메라 코리아(주) 대표자 :</span>수닐카울</li>
+                    <li><span>전화번호:</span>1661-0405</li>
+                    <li><span>서울시 강남구 테헤란로 208 안제타워 2층</span></li>
+                    <li><span>사업자등록번호 :</span>211-88-55103</li>
+                    <li><span>통신판매업 신고번호 :</span>제2016-서울강남-01819호</li>
+                </ul>
+                <p class="copy">
+                    Copyright © 2020 Leica Camera Korea Ltd.
+                </p>
+                <a class="footer-link" href="#none">
+                    <img src="./img/logo48.png" alt="라이카 로고">
+                    DAS WESENTLICHE
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
