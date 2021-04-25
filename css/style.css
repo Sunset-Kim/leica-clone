@@ -217,19 +217,14 @@ body {
     color: var(--secondary);
 }
 #gnb .btn-group {
+    display: flex;
+    align-items: center;
     float: right;
     color: var(--text-white)
 }
-/*### main banner ###*/
-#main-banner {
-    width: 100%;
-}
-#main-banner .banner-container {
-    overflow: hidden;
-}
 /* btn cart */
 #gnb .btn-group a {
-    display: block;
+    display: inline-block;
     padding: 0 15px;
 }
 #gnb .btn-cart {
@@ -252,7 +247,83 @@ body {
     background: var(--secondary);
     border-radius: 50%;
 }
-
+/* .btn-trigger */
+#gnb .btn-group .btn-trigger {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+#gnb .btn-group .btn-trigger span {
+    position: absolute;
+    top: 10%;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition: 0.5s ease-in-out;
+}
+#gnb .btn-group .btn-trigger span:nth-child(2) {
+    top: 50%;
+}
+#gnb .btn-group .btn-trigger span:nth-child(3) {
+    top: 90%;
+}
+#gnb .btn-group .btn-trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(225deg);
+}
+#gnb .btn-group .btn-trigger.active span:nth-child(2) {
+    opacity: 0;
+}
+#gnb .btn-group .btn-trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-225deg);
+}
+/* gnb-side */
+.gnb-side {
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 30rem;
+    height: calc(100vh - 80px);
+    background: #000;
+    transform: translateX(30rem);
+    transition: transform 0.5s ease-in-out;
+    z-index: 99;
+}
+.gnb-side.active {
+    transform: translateX(0);
+}
+#gnb .gnb-side .gnb-depth1 {
+    float: none;
+    text-align: center;
+}
+#gnb .gnb-side .gnb-depth1 > li {
+    float: none;
+    display: block;
+}
+#gnb .gnb-side .gnb-depth1 > li > a{
+    font-weight: bold;
+}
+#gnb .gnb-side .gnb-depth2 {
+    position: static;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+#gnb .gnb-side .gnb-depth1 > li:hover .gnb-depth2 {
+    max-height: calc(45px * 5);
+}
+#gnb .gnb-side .gnb-depth2 > li{
+    float: none;
+}
+/*### main banner ###*/
+#main-banner {
+    width: 100%;
+}
+#main-banner .banner-container {
+    overflow: hidden;
+}
 .banner-slide {
     position: relative;
 }
@@ -392,7 +463,7 @@ body {
 /* layout */
 
 #article .wrap {
-    height: 100%;
+    height: 80rem;
 }
 .article-content {
     height: calc(100% - 125px);

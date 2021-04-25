@@ -1,3 +1,4 @@
+// slide
 $('.banner-container').slick({
     infinite: true,
     arrows: false,
@@ -27,3 +28,16 @@ $('.banner-container').slick({
       },
     ]
   });
+
+  // gnb side menu
+  $('.btn-trigger').click(function(e){
+    e.stopPropagation();
+    $(this).toggleClass('active');
+    $('.gnb-side').toggleClass('active');
+  });
+  
+  $('.gnb-side .gnb-depth2 a,#gnb .wrap, section, footer').click(function(e){
+    $('.btn-trigger').removeClass('active');
+    $('.gnb-side').removeClass('active');
+  })
+ 

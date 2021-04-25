@@ -5,16 +5,29 @@
     #header {
         display: none;
     }
-    /* gnb 고정하고 side바 트리거 생성 */
-    /* 사이드바 스타일링 */
     #gnb {
-        position: sticky;
-        top: 0;
+        position: fixed;
+        width: 100%;
         z-index: 999;
     }
     #gnb .gnb-depth1 {
         display: none;
     }
+    #gnb .gnb-side .gnb-depth1 {
+        display: block;
+    }
+    /* gnb 고정하고 side바 트리거 생성 */
+    #gnb .btn-group .btn-trigger {
+        display: block;
+    }
+    .gnb-side {
+        display: block;
+    }
+    /* main banner */
+    #main-banner {
+        margin-top: 80px;
+    }
+    /* article */
     .article-content .article-left {
         flex: 1;
     }
@@ -27,7 +40,6 @@
     html {
         font-size: 55%;
     }
-    /*  */
     /* main banner */
     .banner-slide .banner-text {
         font-size: 2rem;
@@ -71,8 +83,11 @@
         font-weight: 900;
         font-size: 1.8rem;
     }
+    .slick-dots li {
+        padding: 2rem 0.5rem;
+    }
     /* article */
-    #article {
+    #article .wrap {
         height: auto;
     }
     .article-content {
@@ -82,12 +97,25 @@
         height: 100%;
         margin-right: 0;
         margin-bottom: 2rem;
-        flex: 3;
+    }
+    .article-list {
+        padding-top: 1rem;
+    }
+    .article-list-content {
+        padding: 1rem;
+    }
+    .article-list-content .article-list-text {
+        padding-top: 1rem;
+    }
+    .article-list-content .article-list-text .article-list-title {
+        font-size: 1.8rem;
     }
     /* subbanner */
     .subbanner-content .subbanner-text {
         text-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
+        padding: 1rem;
     }
+
     .subbanner-content .subbanner-text .subbanner-text-title {
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -109,14 +137,20 @@
     /* footer */
     .footer-nav .wrap {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     .footer-nav .wrap > div {
-        max-width: 33%;
+        width: 50%
     }
     .footer-info .wrap {
         flex-wrap: wrap;
     }
     .footer-info .wrap ul {
         width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer-info .wrap p {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
