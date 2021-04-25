@@ -33,6 +33,10 @@ body {
     --tertiary: #fff;
 }
 /* common */
+/* last arrow icon style */
+.last-arrow {
+    color: var(--secondary);
+}
 /* a tag only for link */
 .link-only {
     display: block;
@@ -496,7 +500,8 @@ body {
     color: var(--secondary);
 }
 .article-title a::after {
-    content: '->';
+    content: '\f061 ';
+    font-family: 'FontAwesome';
     padding-left: 20px;
     transition: 0.2s;
 }
