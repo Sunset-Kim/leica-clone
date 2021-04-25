@@ -43,3 +43,13 @@ $('.banner-container').slick({
     $('.gnb-side').removeClass('active');
   })
  
+  // btn top
+  $(document).scroll(function(){
+    if($(document).scrollTop() > 100) {
+      $('.btn-top').addClass('active');
+    } else {
+      $('.btn-top').removeClass('active');
+    }  
+  })
+ 
+  

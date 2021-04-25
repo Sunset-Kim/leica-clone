@@ -41,11 +41,12 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0%;
-    height: 3px;
+    height: 2px;
     background: var(--secondary);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .slick-dots li:hover:after,

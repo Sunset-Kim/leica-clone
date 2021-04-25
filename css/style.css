@@ -12,6 +12,7 @@ html {
     font-size: 62.5%;
     width: 100vw !important;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     width: 100vw !important;
@@ -717,6 +718,10 @@ body {
 .footer-nav ul li {
     font-size: 1.4rem;
     padding: 0.5rem 0;
+    transition: 0.3s ease-in-out;
+}
+.footer-nav ul li:hover:not(.footer-nav-title) {
+    color: var(--text-gray);
 } 
 /* footer info */
 .footer-info {
@@ -747,4 +752,31 @@ body {
 }
 .footer-link img {
     margin-right: 10px;    
+}
+
+/* btn top */
+.btn-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--secondary-light);
+    font-size: 24px;
+    color: white;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.btn-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+.btn-top:hover {
+    background: var(--secondary);
 }
