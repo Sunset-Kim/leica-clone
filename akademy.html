@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/slick/slick.js"></script>
+    <link rel="stylesheet" href="./js/slick/slick.css">
+    <link rel="stylesheet" href="./js/slick/slick-theme.css">
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+    <script src="./js/akademy/akademy.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/common/reset.css">
+    <link rel="stylesheet" href="./css/common/global.css">
+    <link rel="stylesheet" href="./css/common/layouts.css">
+    <link rel="stylesheet" href="./css/common/layouts_responsive.css">
+    <link rel="stylesheet" href="./css/akademy/akademy.css">
+    <link rel="stylesheet" href="./css/akademy/akademy_responsive.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="wrap">
+            <div class="header-left">
+                <a href="#none">REGISTER A PRODUCT</a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <label for="input-search">
+                            <input id="input-search" type="text" placeholder="Search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <select name="lang" id="lang-list">
+                            <option value="lang-kr">Korea</option>
+                            <option value="lang-jp">Japan</option>
+                            <option value="lang-us">English</option>
+                        </select>
+                    </li>
+                    <li><a href="#none">Login</a></li>
+                    <li><a href="#none">
+                        <button class="btn-link">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            OnlineStore
+                        </button>
+                        
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- gnb -->
+    <nav id="gnb">
+        <div class="wrap">
+            <!-- logo -->
+            <h1 class="visually-hidden">
+                Leica
+            </h1>
+            <a href="#" class="logo-box">
+                <img src="./img/logo48.png" alt="로고">
+            </a>
+            <ul class="gnb-depth1">
+                <li>
+                    <a href="#none">LEICA CAMERA KOREA</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">회사소개</a></li>
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">자주하는 질문</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">AKADEMIE</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">라이카아카데미</a></li>
+                            <li><a href="#none">아카데미 일정</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">CONTENTS</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">보도자료</a></li>
+                            <li><a href="#none">전시</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">STORE/SERVICE CENTER</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">위치안내</a></li>                            
+                        </div>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">CUSTOMER CARE</a>
+                    <ul class="gnb-depth2">
+                        <div class="wrap">
+                            <li><a href="#none">제품등록</a></li>
+                            <li><a href="#none">다운로드</a></li>
+                            <li><a href="#none">자료실</a></li>
+                            <li><a href="#none">온라인 상담예약</a></li>
+                            <li><a href="#none">오프라인 상담예약</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <a class="btn-cart" href="#none">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+                <div class="btn-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="gnb-side">
+            <ul class="gnb-depth1">
+                <li>
+                    <a href="#none">LEICA CAMERA KOREA</a>
+                    <ul class="gnb-depth2">
+                        <li><a href="#none">회사소개</a></li>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">자주하는 질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">AKADEMIE</a>
+                    <ul class="gnb-depth2">
+                        <li><a href="#none">라이카아카데미</a></li>
+                        <li><a href="#none">아카데미 일정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">CONTENTS</a>
+                    <ul class="gnb-depth2">
+                        <li><a href="#none">보도자료</a></li>
+                        <li><a href="#none">전시</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">STORE/SERVICE CENTER</a>
+                    <ul class="gnb-depth2">
+                        <li><a href="#none">위치안내</a></li>                            
+                    </ul>
+                </li>
+                <li>
+                    <a href="#none">CUSTOMER CARE</a>
+                    <ul class="gnb-depth2">
+                        <li><a href="#none">제품등록</a></li>
+                        <li><a href="#none">다운로드</a></li>
+                        <li><a href="#none">자료실</a></li>
+                        <li><a href="#none">온라인 상담예약</a></li>
+                        <li><a href="#none">오프라인 상담예약</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- content -->
+    <!-- section1 : main-banner -->
+    <section class="main-banner">
+        <h1 class="visually-hidden">아카데미소개</h1>
+        <div class="main-banner-img">
+            <img src="./img/akademy/akademy_main.png" alt="아카데미 메인이미지">
+        </div>
+        <div class="main-banner-text">
+            <h2 class="title">
+                라이카에서 매주 열리는<br>
+                다양한 클래스
+            </h2>
+            <a class="subtitle" href="#none">
+                아카데미 일정 보러가기
+            </a>
+        </div>
+    </section>
+    <!-- section2 : main-text -->
+    <section class="main-text">
+        <h1 class="visually-hidden">아카데미설명</h1>
+        <div class="wrap">
+            <div class="main-text-left">
+                <span>완벽한</span>
+                <span>사진을 위한</span>
+                <span>안목</span>
+            </div>
+            <div class="main-text-left">
+                <span>
+                    <strong>첫째,</strong> 앙리 까르티에 브레송의 발자취를 따라 함께 걸어봅시다.
+                    라이카 포토그래퍼들과 함께 놀라운 순간을 포착해보세요.
+                </span>
+                <span>
+                    <strong>둘째,</strong> 라이카 아카데미는 여러분에게 사진 지식을 전달하고,
+                    나만의 사진을 표현하는 방법을 알려줍니다.
+                </span>
+                <span>
+                    <strong>셋째,</strong>
+                    당신이 초보든 전문가든, 우리와 함께 그 다음 단계로 나아가보세요.
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- section3 :  -->
+    <section class="slide">
+        <div class="wrap">
+            <h1>Recent Akademie</h1>
+            <div class="slide-container">
+                <div class="slide-item">
+                    <a href="#none" class="link-only ef-overlay">
+                        <div class="slide-item-img">
+                            <img src="./img/akademy/akademy1.jpg" alt="아카데미일정1">
+                        </div>
+                        <div class="slide-item-text">
+                            <h4>
+                                라이카로 가족사진 찍기
+                            </h4>
+                            <ul>
+                                <li><strong>강의일자</strong>2021.05.01</li>
+                                <li><strong>접수기간</strong>2021.05.01 ~ 2021.05.25</li>
+                                <li><strong>강의장소</strong>작가의 작업실</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="slide-item">
+                    <a href="#none" class="link-only ef-overlay">
+                        <div class="slide-item-img">
+                            <img src="./img/akademy/akademy2.jpg" alt="아카데미일정1">
+                        </div>
+                        <div class="slide-item-text">
+                            <h4>
+                                라이카로 가족사진 찍기
+                            </h4>
+                            <ul>
+                                <li><strong>강의일자</strong>2021.05.01</li>
+                                <li><strong>접수기간</strong>2021.05.01 ~ 2021.05.25</li>
+                                <li><strong>강의장소</strong>작가의 작업실</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide-item">
+                    <a href="#none" class="link-only ef-overlay">
+                        <div class="slide-item-img">
+                            <img src="./img/akademy/akademy3.jpg" alt="아카데미일정1">
+                        </div>
+                        <div class="slide-item-text">
+                            <h4>
+                                라이카로 가족사진 찍기
+                            </h4>
+                            <ul>
+                                <li><strong>강의일자</strong>2021.05.01</li>
+                                <li><strong>접수기간</strong>2021.05.01 ~ 2021.05.25</li>
+                                <li><strong>강의장소</strong>작가의 작업실</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slide-item">
+                    <a href="#none" class="link-only ef-overlay">
+                        <div class="slide-item-img">
+                            <img src="./img/akademy/akademy4.jpg" alt="아카데미일정1">
+                        </div>
+                        <div class="slide-item-text">
+                            <h4>
+                                라이카로 가족사진 찍기
+                            </h4>
+                            <ul>
+                                <li><strong>강의일자</strong>2021.05.01</li>
+                                <li><strong>접수기간</strong>2021.05.01 ~ 2021.05.25</li>
+                                <li><strong>강의장소</strong>작가의 작업실</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+       
+    </section>
+    <!-- footer -->
+    <footer id="footer">        
+        <nav class="footer-nav">
+            <div class="wrap">
+                <!-- 1st -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">LEICA CAMERA KOREA</li>
+                        <li><a href="#none">회사소개</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-nav-title">LEGAL</li>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <!-- 2nd -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">ONLINE SHOP</li>
+                        <li><a href="#none">Leica S</a></li>
+                        <li><a href="#none">Leica M </a></li>
+                        <li><a href="#none">Leica SL2</a></li>
+                        <li><a href="#none">Leica Q</a></li>
+                        <li><a href="#none">Leica TL2</a></li>
+                        <li><a href="#none">Compacts</a></li>
+                        <li><a href="#none">S/O</a></li>
+                        <li><a href="#none">Special</a></li>
+                    </ul>
+                </div>
+                <!-- 3rd -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">AKADEMIE</li>
+                        <li><a href="#none">라이카 아카데미 소개</a></li>
+                        <li><a href="#none">아카데미 일정 </a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-nav-title">CUSTOMER SERVICE</li>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">자주하는 질문(FAQ)</a></li>
+                        <li><a href="#none">배송 및 교환 정책</a></li>
+                        <li><a href="#none">1:1문의</a></li>
+                        <li><a href="#none">매장안내</a></li>
+                    </ul>
+                </div>
+                <!-- 4th -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">CONTENTS</li>
+                        <li><a href="#none">보도자료</a></li>
+                        <li><a href="#none">라이카 전시 일정</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer-nav-title">CUSTOMER CARE</li>
+                        <li><a href="#none">제품등록</a></li>
+                        <li><a href="#none">다운로드</a></li>
+                        <li><a href="#none">자료실</a></li>
+                    </ul>
+                </div>
+                <!-- 5th -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">LOGIN / SIGN UP</li>
+                        <li><a href="#none">Login Account</a></li>
+                        <li><a href="#none">Sign Up</a></li>
+                    </ul>
+                </div>
+                <!-- 6th -->
+                <div>
+                    <ul>
+                        <li class="footer-nav-title">SOCIAL</li>
+                        <li><a href="#none">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            Facebook
+                        </a></li>
+                        <li><a href="#none">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            Instagram
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <!-- footer info -->
+        <div class="footer-info">
+            <div class="wrap">
+                <ul>
+                    <li><span>라이카 카메라 코리아(주) 대표자 :</span>수닐카울</li>
+                    <li><span>전화번호:</span>1661-0405</li>
+                    <li><span>서울시 강남구 테헤란로 208 안제타워 2층</span></li>
+                    <li><span>사업자등록번호 :</span>211-88-55103</li>
+                    <li><span>통신판매업 신고번호 :</span>제2016-서울강남-01819호</li>
+                </ul>
+                <p class="copy">
+                    Copyright © 2020 Leica Camera Korea Ltd.
+                </p>
+                <a class="footer-link" href="#none">
+                    <img src="./img/logo48.png" alt="라이카 로고">
+                    DAS WESENTLICHE
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- btn top -->
+    <a href="#" class="btn-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</body>
+</html>

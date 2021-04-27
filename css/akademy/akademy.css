@@ -1,0 +1,110 @@
+body {
+    background: #000;
+}
+.main-banner {
+    position: relative;
+}
+.main-banner .main-banner-img {
+    width: 100%;
+    overflow: hidden;
+}
+.main-banner .main-banner-img img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.main-banner .main-banner-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.main-banner .main-banner-text .title {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+.main-banner .main-banner-text .subtitle {
+    font-size: 1.8rem;
+    color: gray;
+    transition: color 0.5s;
+    font-weight: 600;
+}
+.main-banner .main-banner-text .subtitle:hover {
+    color: var(--secondary);
+
+}
+
+/* main-text */
+.main-text {
+    margin: 5rem;
+    color: white;
+}
+.main-text > .wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text > .wrap > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.main-text > .wrap > div:nth-child(2) {
+    flex: 2;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.main-text > .wrap > div:nth-child(2) strong {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+.main-text > .wrap > div:nth-child(2) span {
+    margin-bottom: 1.5rem;
+}
+
+/* slide */
+.slide {
+    color: white;
+    margin-bottom: 5rem;
+}
+.slide h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.slide-container{}
+
+.slide-item {
+    padding: 1rem;
+}
+.slide-item .slide-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-item .slide-item-text {
+    width: 100%;
+    min-height: 100px;
+}
+.slide-item .slide-item-text h4 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.slide-item .slide-item-text ul li {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+}
+.slide-item .slide-item-text ul li strong {
+    padding-right: 1rem;
+    font-weight: 900;
+}
