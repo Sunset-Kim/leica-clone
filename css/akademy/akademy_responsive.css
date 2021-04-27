@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+    .main-banner {
+        position: relative;
+        margin-top: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 786px) {
+    .main-banner .main-banner-text .title {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    .main-text > .wrap {
+        display: block;
+    }
+}
