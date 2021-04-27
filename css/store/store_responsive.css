@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px) {
+    .gallery-header {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .gallery {
+        margin-bottom: 5rem;
+    }
+    .gallery > .wrap{
+        padding: 2rem;
+    }
+    .gallery .gallery-container {
+        display: block;
+    }
+    .gallery-item {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
