@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100vw;
+    }
+    .notice-header {
+        margin-top: 80px;
+    }
+    .notice-lnb-list li a {
+        font-size: 1.6rem
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .notice-body {
+        display: block;
+    }
+    .notice-lnb {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .notice-lnb-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .notice-lnb-list li {
+        width: 50%;
+    }
+    .notice-lnb-list li a {
+        font-size: 1.5rem
+    }
+}
+
