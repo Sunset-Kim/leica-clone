@@ -1,28 +1,4 @@
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 58%;
-    }
-    #header {
-        display: none;
-    }
-    #gnb {
-        position: fixed;
-        width: 100%;
-        z-index: 999;
-    }
-    #gnb .gnb-depth1 {
-        display: none;
-    }
-    #gnb .gnb-side .gnb-depth1 {
-        display: block;
-    }
-    /* gnb 고정하고 side바 트리거 생성 */
-    #gnb .btn-group .btn-trigger {
-        display: block;
-    }
-    .gnb-side {
-        display: block;
-    }
     /* main banner */
     #main-banner {
         margin-top: 80px;
@@ -37,9 +13,6 @@
 }
 
 @media screen and (max-width: 786px) {
-    html {
-        font-size: 55%;
-    }
     /* main banner */
     .banner-slide .banner-text {
         font-size: 2rem;
@@ -133,24 +106,5 @@
     .notice-desc {
         font-size: 2rem;
         font-weight: 600;
-    }
-    /* footer */
-    .footer-nav .wrap {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .footer-nav .wrap > div {
-        width: 50%
-    }
-    .footer-info .wrap {
-        flex-wrap: wrap;
-    }
-    .footer-info .wrap ul {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .footer-info .wrap p {
-        width: 100%;
-        margin-bottom: 10px;
     }
 }
