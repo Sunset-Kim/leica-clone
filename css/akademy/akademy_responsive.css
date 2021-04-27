@@ -7,11 +7,23 @@
 }
 
 @media screen and (max-width: 786px) {
+    .wrap {
+        padding: 0 10px;
+    }
     .main-banner .main-banner-text .title {
         font-size: 3.2rem;
         margin-bottom: 2rem;
     }
     .main-text > .wrap {
         display: block;
+    }
+    .main-text > .wrap > div:first-child {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+    .main-text > .wrap > div:nth-child(2) {
+        font-size: 1.8rem;
     }
 }

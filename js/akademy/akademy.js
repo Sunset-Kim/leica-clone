@@ -25,8 +25,4 @@ $(function(){
             // settings: "unslick"
           ]
       });
-
-    //   scroll
-
-    
 });
