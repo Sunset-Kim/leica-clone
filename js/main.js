@@ -9,6 +9,7 @@ $('.btn-trigger').click(function(e){
   $('.gnb-side .gnb-depth2 a,#gnb .wrap, section, footer').click(function(e){
     $('.btn-trigger').removeClass('active');
     $('.gnb-side').removeClass('active');
+    $('.header-menu').stop().slideUp();
   })
  
   // btn top
@@ -18,6 +19,15 @@ $('.btn-trigger').click(function(e){
     } else {
       $('.btn-top').removeClass('active');
     }  
+  })
+
+  // header submenu
+  $('button.btn-link').click(function(){
+    $('.header-menu').stop().slideToggle();
+  })
+  $('.gnb-depth1 > li > a').mouseover(function(){
+    console.log('여기');
+    $('.header-menu').stop().slideUp();
   })
 }) 
 

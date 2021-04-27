@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
     margin-left: 1.5rem;
 }
 #header .header-menu {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 120px;
     left: 0;
