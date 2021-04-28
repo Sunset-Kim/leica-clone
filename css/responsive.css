@@ -50,7 +50,8 @@
     }
     .slide-item .slide-text {
         color: white;
-        text-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
+        text-shadow: 1px 1px 3px rgba(0,0,0,.4),
+                    3px 3px 3px rgba(0,0,0,.4);
     }
     .slide-item .slide-text .slide-text-desc {
         font-weight: 900;
