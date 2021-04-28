@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px) {
+    .login {
+        margin-top: calc(80px + 5rem);
+    }
+}
+
+@media screen and (max-width: 786px) {
+    /* login api */
+    .api-group .box.google {
+        padding-left: 3rem;
+    }
+    .api-group .box.naver {
+        padding-left: 3rem;
+    }
+    .api-group .box.kakao {
+        padding-left: 3rem;
+    }
+    
+}
