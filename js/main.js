@@ -30,5 +30,10 @@ $('.btn-trigger').click(function(e){
     e.stopPropagation();
     $('.header-menu').stop().slideUp();
   })
+
+  // link tag stop propagation
+  $('.header-menu-list a, .gnb-side a').click(function(e){
+    e.stopPropagation();
+  })
 }) 
 
