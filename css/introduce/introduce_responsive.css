@@ -4,6 +4,22 @@
 }
 
 @media screen and (max-width: 786px) {
+    .main-text > .wrap{
+        padding: 0 2rem;
+    }
+    .main-text .title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    
+    .main-text .main-desc {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .main-text .sub-desc {
+        font-size: 1.8rem;
+    }
     /* sub contents */
     .subcontents .item {
         display: block;
