@@ -6,7 +6,7 @@ $('.btn-trigger').click(function(e){
     $('.gnb-side').toggleClass('active');
   });
   
-  $('.gnb-side .gnb-depth2 a,#gnb .wrap, section, footer').click(function(e){
+  $(document).click(function(e){
     $('.btn-trigger').removeClass('active');
     $('.gnb-side').removeClass('active');
     $('.header-menu').stop().slideUp();
@@ -22,11 +22,12 @@ $('.btn-trigger').click(function(e){
   })
 
   // header submenu
-  $('button.btn-link').click(function(){
+  $('button.btn-link').click(function(e){
+    e.stopPropagation();
     $('.header-menu').stop().slideToggle();
   })
-  $('.gnb-depth1 > li > a').mouseover(function(){
-    console.log('여기');
+  $('.gnb-depth1 > li > a').mouseover(function(e){
+    e.stopPropagation();
     $('.header-menu').stop().slideUp();
   })
 }) 
