@@ -216,7 +216,7 @@ body::-webkit-scrollbar {
     border-bottom: 1px solid var(--border);
 }
 
-.header-right ul li .btn-link {
+.btn-link {
     border-radius: 5px;
     padding: 5px 15px;
     color: var(--text-white);
@@ -224,10 +224,10 @@ body::-webkit-scrollbar {
     transition: background-color 0.2s;
     cursor: pointer;
 }
-.header-right ul li .btn-link i {
+.btn-link i {
     padding-right: 5px;
 }
-.header-right ul li .btn-link:hover {
+.btn-link:hover {
     background: var(--secondary-dark);
 }
 
@@ -298,6 +298,10 @@ body::-webkit-scrollbar {
     align-items: center;
     float: right;
     color: var(--text-white)
+}
+/* btn group */
+#gnb .btn-link {
+    display: none;
 }
 /* btn cart */
 #gnb .btn-group a {

@@ -3,6 +3,9 @@
     html {
         font-size: 58%;
     }
+    .wrap {
+        padding: 0 2rem;
+    }
     /* header */
     #header {
         display: none;
@@ -20,6 +23,9 @@
         display: block;
     }
     /* gnb 고정하고 side바 트리거 생성 */
+    #gnb .btn-link {
+        display: block;
+    }
     #gnb .btn-group .btn-trigger {
         display: block;
     }
@@ -32,6 +38,11 @@
     /* common */
     html {
         font-size: 55%;
+    }
+  
+    .btn-link {
+        border-radius: 0.5rem;
+        padding: 0.5rem 1.5rem;
     }
     /* footer */
     .footer-nav .wrap {
