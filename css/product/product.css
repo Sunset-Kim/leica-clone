@@ -1,0 +1,120 @@
+/* main banner */
+.main-banner {
+    width: 100%;
+    overflow: hidden;
+}
+.main-banner img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-height: 400px;
+}
+
+/* ### product #### */
+/* layout */
+.product {
+    margin: 2.5rem 0;
+}
+.product .wrap {
+    display: flex;
+}
+.product-lnb {
+    flex: 0 1 200px;
+    margin-right: 2rem;
+    transition: 0.3s ease-in-out;
+}
+.product-main {
+    flex: 1;
+}
+/* common */
+.product .title {
+    font-weight: 800;
+    font-size: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1rem;
+}
+/* lnb */
+.product-lnb-title {
+    margin-bottom: 2rem;
+}
+.product-lnb-list {}
+.product-lnb-list li a {
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    transition: color 0.3s ease-in-out;
+}
+.product-lnb-list > li.active > a,
+.product-lnb-list li a:hover {
+    color: var(--secondary-light);
+}
+.product-lnb-list > li > a {
+    position: relative;
+    font-weight: 600;
+}
+.product-lnb-list > li:not(:first-child) > a::before,
+.product-lnb-list > li:not(:first-child) > a::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+}
+.product-lnb-sub-list {
+    display: none;
+}
+.product-lnb-sub-list li a {
+    padding-left: 1.5rem;
+}
+/* main */
+.product-item-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-item {
+    position: relative;
+    width: 33.3333%;
+}
+.product-item-text {
+    position: absolute;
+    width: 90%;
+    top: 1rem;
+    left: 1rem;
+}
+.product-item-text h6 {
+    width: auto;
+    overflow: hidden;
+    font-size: 1.6rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+.product-item-text .soldout {
+    font-weight: 900;
+    color: var(--secondary);
+}
+.product-item-text .sale {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    display: block;
+}
+.product-item-text .price {
+    color: var(--secondary);
+    font-weight: 600;
+}
+.product-item-text .price::before,
+.product-item-text .sale::before {
+    content: '￦';
+}
+.product-item-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.product-item-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

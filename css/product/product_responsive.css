@@ -1,0 +1,31 @@
+@media screen and (max-width: 1024px) {
+    .main-banner {
+        margin-top: 80px;
+    }
+    .product-item {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 786px) {
+    .product .wrap {
+        padding: 0 4rem;
+    }
+    .product .title {
+        padding-bottom: 2.5rem;
+    }
+    .product-lnb {
+        flex: 0 1 100px;
+        margin-right: 2rem;
+    }
+    .product-item {
+        width: 100%;
+        min-height: 150px;
+    }
+    .product-item-text .sale {
+        display: none;
+    }
+    
+}
+
