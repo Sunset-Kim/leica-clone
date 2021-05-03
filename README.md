@@ -1,7 +1,7 @@
 # leica-clone
 라이카 클론코딩 반응형작업
 
-<img src="./project_1.png">
+<img src="./project_1.PNG">
 
 ## 고정형사이트를 반응형으로 개선
 1. 테블릿사이즈 구현
